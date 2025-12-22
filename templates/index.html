@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Home Designer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>🏡 AI Home Design Generator</h1>
+
+<div class="box">
+    <input type="number" id="area" placeholder="Carpet Area (sq ft)">
+    
+    <select id="bhk">
+        <option value="1">1 BHK</option>
+        <option value="2">2 BHK</option>
+        <option value="3">3 BHK</option>
+    </select>
+
+    <select id="floors">
+        <option value="Ground Floor">Ground Floor</option>
+        <option value="G+1">G + 1</option>
+    </select>
+
+    <select id="style">
+        <option value="Modern Indian">Modern Indian</option>
+        <option value="Minimalist">Minimalist</option>
+        <option value="Luxury">Luxury</option>
+    </select>
+
+    <button onclick="generate()">Generate Design</button>
+</div>
+
+<div id="output"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="/static/script.js"></script>
+
+</body>
+</html>
