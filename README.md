@@ -1,4 +1,4 @@
-AI Home Designer – Smart Layout Generator
+                                AI Home Designer – Smart Layout Generator
 An innovative, AI-powered web application that acts as your personal virtual architect. By leveraging the power of Google's Gemini API, this tool takes basic requirements like plot area and BHK configuration to generate creative, optimized home design layouts and structural suggestions in real-time.
 
 Built with creativity and AI by Kinza Zahra 🏡✨
