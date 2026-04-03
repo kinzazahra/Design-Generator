@@ -1,87 +1,154 @@
-                                AI Home Designer – Smart Layout Generator
-An innovative, AI-powered web application that acts as your personal virtual architect. By leveraging the power of Google's Gemini API, this tool takes basic requirements like plot area and BHK configuration to generate creative, optimized home design layouts and structural suggestions in real-time.
+# 🏡 AI Home Designer – Smart Layout Generator
 
-Built with creativity and AI by Kinza Zahra 🏡✨
+An innovative, AI-powered web application that acts as your **personal virtual architect**.
+By leveraging the power of **Google's Gemini API**, this tool takes basic requirements like plot area and BHK configuration to generate **creative, optimized home design layouts** and structural suggestions in real-time.
 
-Features
-AI-Powered Design Generation: Integrates seamlessly with the Google Generative AI (Gemini) to produce intelligent and highly customized room allocations, interior suggestions, and spatial planning.
+✨ Built with creativity and AI by **Kinza Zahra**
 
-Intuitive Input Parameters:
+---
 
-Total Area: Input your plot or flat size (e.g., 1000 sq ft).
+## 🚀 Features
 
-BHK Configuration: Specify your requirement (e.g., 1 BHK, 2 BHK, 3 BHK) to get tailored results.
+### 🤖 AI-Powered Design Generation
 
-Real-Time Generation: Watch the AI draft your home layout concepts dynamically without needing to reload the page.
+* Seamlessly integrates with **Google Generative AI (Gemini)**
+* Generates intelligent:
 
-Secure & Configurable: Uses environment variables (.env) to keep your API keys secure during development.
+  * Room allocations
+  * Interior suggestions
+  * Spatial planning layouts
 
-Clean User Interface: A minimal, responsive frontend design that focuses entirely on delivering a smooth user experience.
+### 🧾 Intuitive Input Parameters
 
-🛠 Tech Stack
-Frontend: HTML5, CSS3, Vanilla JavaScript.
+* **Total Area** → e.g., `1000 sq ft`
+* **BHK Configuration** → e.g., `1 BHK`, `2 BHK`, `3 BHK`
 
-Backend: Python (Flask Framework).
+### ⚡ Real-Time Generation
 
-AI Integration: google-generativeai (Gemini API) for natural language layout generation.
+* Instant AI-generated layouts
+* No page reload required
 
-Security: python-dotenv for local environment variable management.
+### 🔐 Secure & Configurable
 
-📂 Project Structure
-Plaintext
+* Uses `.env` file for API key security
+* Keeps sensitive data safe during development
+
+### 🎨 Clean User Interface
+
+* Minimal and responsive design
+* Focused on smooth user experience
+
+---
+
+## 🛠 Tech Stack
+
+| Layer    | Technology                        |
+| -------- | --------------------------------- |
+| Frontend | HTML5, CSS3, Vanilla JavaScript   |
+| Backend  | Python (Flask)                    |
+| AI       | Google Generative AI (Gemini API) |
+| Security | python-dotenv                     |
+
+---
+
+## 📂 Project Structure
+
+```plaintext
 Design-Generator/
 │
 ├── app.py              # Main Flask server and Gemini API logic
-├── requirements.txt    # Python library dependencies
-├── .env                # Secret environment variables (API Keys)
+├── requirements.txt    # Python dependencies
+├── .env                # API keys (not pushed to GitHub)
 │
-├── static/             # Frontend assets
-│   ├── style.css       # Clean, modern UI styling
-│   └── script.js       # Form handling and asynchronous API calls
+├── static/
+│   ├── style.css       # UI styling
+│   └── script.js       # Frontend logic & API calls
 │
-└── templates/          # HTML Views
-    └── index.html      # Main user interface for the AI Designer
-⚙️ Installation & Setup
-Clone the Repository:
+└── templates/
+    └── index.html      # Main UI
+```
 
-Bash
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+```bash
 git clone <your-repo-url>
 cd Design-Generator
-Install Dependencies:
-Ensure you have Python installed, then run:
+```
 
-Bash
+### 2️⃣ Install Dependencies
+
+Make sure Python is installed, then run:
+
+```bash
 pip install -r requirements.txt
-(This will install Flask, google-generativeai, and python-dotenv).
+```
 
-Configure the Environment:
+---
 
-Open the .env file in the root directory.
+### 3️⃣ Configure Environment Variables
 
-Add your Google Gemini API key:
+Create or open the `.env` file and add:
 
-Code snippet
+```env
 GEMINI_API_KEY=your_actual_api_key_here
-(Get your free key from Google AI Studio).
+```
 
-Run the Application:
+👉 Get your API key from **Google AI Studio**
 
-Bash
+---
+
+### 4️⃣ Run the Application
+
+```bash
 python app.py
-Open your browser and navigate to the local server, typically http://127.0.0.1:5000.
+```
 
-🚀 How to Use
-Enter Details: Type in the total area of your property and select the desired number of bedrooms/halls/kitchens (BHK).
+Then open your browser and visit:
 
-Generate: Click the "Generate" button to send your parameters to the AI.
+```
+http://127.0.0.1:5000
+```
 
-Review Design: The Gemini model will process your constraints and return a detailed, text-based architectural breakdown of room sizes, placements, and design tips.
+---
 
-🔮 Future Improvements
-Integration with an Image Generation AI (like Midjourney or DALL-E) to produce visual 2D/3D floor plans.
+## 🧑‍💻 How to Use
 
-Export functionality to save the generated layout details as a PDF.
+1. **Enter Details**
 
-More granular inputs (e.g., Vastu/Feng Shui compliance, specific architectural styles like "Modern" or "Minimalist").
+   * Input total property area
+   * Select desired BHK configuration
 
-Made with ❤️ by Kinza Zahra
+2. **Click Generate**
+
+   * Sends data to the AI
+
+3. **View Results**
+
+   * AI returns:
+
+     * Room sizes
+     * Layout suggestions
+     * Design insights
+
+---
+
+## 🔮 Future Improvements
+
+* 🖼️ AI-generated **2D/3D floor plans** (DALL·E / Midjourney integration)
+* 📄 Export layouts as **PDF**
+* 🧭 Add **Vastu / Feng Shui** compliance
+* 🏗️ Support architectural styles:
+
+  * Modern
+  * Minimalist
+  * Traditional
+
+---
+
+## ❤️ Credits
+
+Made with love by **Kinza Zahra**
